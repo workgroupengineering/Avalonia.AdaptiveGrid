@@ -1,0 +1,12 @@
+<Project>
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <Import Project="$(MSBuildThisFileDirectory)\build\AvaloniaVersion.props" />
+  <Import Project="$(MSBuildThisFileDirectory)\build\SharedVersion.props" />
+  <Import Project="$(MSBuildThisFileDirectory)\build\SourceLink.props" Condition="'$(DisableSourceLink)' == ''" />
+  <Import Project="$(MSBuildThisFileDirectory)\build\NetAnalyzers.props" />
+  <Import Project="$(MSBuildThisFileDirectory)\build\TrimmingEnable.props" />
+  <Import Project="$(MSBuildThisFileDirectory)\build\NullableEnable.props" />
+</Project>
