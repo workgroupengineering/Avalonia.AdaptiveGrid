@@ -20,7 +20,7 @@ public class AdaptiveGrid : Grid
     /// <summary>
     /// Property for <see cref="TemplateAreas"/>.
     /// </summary>
-    public readonly static StyledProperty<IList<AdaptiveGridTemplateArea>> TemplateAreaProperty =
+    public readonly static StyledProperty<IList<AdaptiveGridTemplateArea>> TemplateAreasProperty =
         AvaloniaProperty.Register<AdaptiveGrid, IList<AdaptiveGridTemplateArea>>(nameof(TemplateAreas));
 
 
@@ -29,8 +29,8 @@ public class AdaptiveGrid : Grid
     /// </summary>
     public IList<AdaptiveGridTemplateArea> TemplateAreas
     {
-        get => GetValue(TemplateAreaProperty);
-        set => SetValue(TemplateAreaProperty, value);
+        get => GetValue(TemplateAreasProperty);
+        set => SetValue(TemplateAreasProperty, value);
     }
 
     /// <summary>
